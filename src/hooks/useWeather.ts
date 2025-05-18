@@ -34,6 +34,7 @@ export default function useWeather() {
 
     setLoading(true);
     setWeather(initialState);
+    setNotFound(false);
 
     try {
       const appId = import.meta.env.VITE_API_KEY;
